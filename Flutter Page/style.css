@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mona Sans";
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+  color: black;
+}
+#main header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.4rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  color: black;
+  background-color: white;
+}
+#main header h1 {
+  font-size: 1.8rem;
+  font-weight: 350;
+}
+#main header i {
+  font-size: 1.5rem;
+  font-weight: 350;
+}
+#main #hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 2rem;
+}
+#main #hero h3 {
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: 500;
+}
+#main #view1 {
+  background: linear-gradient(to bottom left, white, #ffe1e6);
+  padding: 1rem 2rem;
+}
+#main #view1 p {
+  color: black;
+  text-align: center;
+  font-size: 2.2rem;
+}
+#main #view2 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0rem 1.5rem;
+}
+#main #view2 hr {
+  background-color: rgb(142, 142, 142);
+  height: 0.2rem;
+  border: none;
+  border-radius: 1rem;
+  opacity: 0.2;
+}
+#main #view2 img {
+  width: 100%;
+}
+#main #view2 .tags {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+#main #view2 .tags h4 {
+  font-size: 1.5rem;
+}
+#main #view3 {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  background: linear-gradient(to left bottom, white, rgb(255, 255, 207));
+  padding: 4rem 1.2rem;
+}
+#main #view3 #view3-top img {
+  width: 100%;
+}
+#main #view3 #view3-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+#main #view3 #view3-bottom h4 {
+  font-size: 1.2rem;
+}
+#main #view3 #view3-bottom h3 {
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: 800;
+}
+#main #view3 #view3-bottom p {
+  font-size: 1rem;
+  width: 14.5rem;
+  color: rgba(0, 0, 0, 0.781);
+}
+#main #view3 #view3-bottom button {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 1.5rem;
+  background-color: rgb(2, 104, 215);
+  color: white;
+  font-weight: 600;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all ease 0.4s;
+}
+#main #view3 #view3-bottom button:hover {
+  scale: 1.05;
+}
+#main #view4 {
+  padding: 1rem 2rem;
+}
+#main #view4-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border: 1px solid blue;
+  border-radius: 3rem;
+  background-color: blue;
+  color: rgba(255, 255, 255, 0.905);
+  padding: 8rem 2rem;
+}
+#main #view4-card h2 {
+  font-size: 3rem;
+}
+#main #view4-card p {
+  font-size: 1.1rem;
+}
+#main #view4-card button {
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: white;
+  color: rgb(0, 128, 255);
+  border: none;
+  padding: 0.6rem 1.8rem;
+  border-radius: 2rem;
+  font-weight: 700;
+}
+#main #view4-card #view4-card-bottom p {
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 0.4rem;
+  text-decoration-color: transparent;
+  cursor: pointer;
+  transition: all ease 0.4s;
+}
+#main #view4-card #view4-card-bottom p:hover {
+  text-decoration-color: white;
+}/*# sourceMappingURL=style.css.map */
