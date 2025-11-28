@@ -47,7 +47,7 @@ body {
 #main #hero h3 {
   font-size: 2.4rem;
   text-align: center;
-  font-weight: 500;
+  font-weight: 800;
 }
 #main #view1 {
   background: linear-gradient(to bottom left, white, #ffe1e6);
@@ -127,7 +127,7 @@ body {
   scale: 1.05;
 }
 #main #view4 {
-  padding: 1rem 2rem;
+  padding: 1rem 1.6rem;
 }
 #main #view4-card {
   display: flex;
@@ -135,9 +135,9 @@ body {
   gap: 1.5rem;
   border: 1px solid blue;
   border-radius: 3rem;
-  background-color: blue;
+  background: linear-gradient(rgb(4, 36, 73), rgb(5, 94, 183));
   color: rgba(255, 255, 255, 0.905);
-  padding: 8rem 2rem;
+  padding: 7rem 2rem;
 }
 #main #view4-card h2 {
   font-size: 3rem;
@@ -154,6 +154,7 @@ body {
   padding: 0.6rem 1.8rem;
   border-radius: 2rem;
   font-weight: 700;
+  cursor: pointer;
 }
 #main #view4-card #view4-card-bottom p {
   text-align: center;
@@ -165,4 +166,55 @@ body {
 }
 #main #view4-card #view4-card-bottom p:hover {
   text-decoration-color: white;
+}
+
+@media (min-width: 1024px) {
+  #main #hero {
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 0rem 20rem;
+  }
+  #main #hero img {
+    width: 100%;
+    max-width: 600px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  #main #hero h3 {
+    font-size: 5rem;
+    text-align: left;
+    line-height: 5rem;
+  }
+  #main #view1 {
+    padding: 5rem;
+  }
+  #main #view2 {
+    flex-direction: row;
+    padding: 0rem 3rem;
+  }
+  #main #view2 hr {
+    width: 100%;
+    max-width: 500px;
+    background-color: black;
+  }
+  #main #view2 .tags p {
+    width: 15rem;
+    font-size: 1.2rem;
+  }
+  #main #view2 .tags img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+  #main #view3 {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  #main #view3 #view3-top img {
+    max-width: 500px;
+  }
+  #main #view3 #view3-bottom {
+    gap: 3rem;
+  }
 }/*# sourceMappingURL=style.css.map */
