@@ -31,7 +31,7 @@ btnEl.addEventListener("click", () => {
   newHeading.style.position = "absolute";
   newHeading.style.top = y + "%";
   newHeading.style.left = x + "%";
-//   newHeading.style.transform = `rotate(${r}deg)`;
+  //   newHeading.style.transform = `rotate(${r}deg)`;
   newHeading.style.color = `rgb(${c1},${c2},${c3})`;
 
   newHeading.innerHTML = names[randomNames];
