@@ -124,3 +124,8 @@ section {
 .red-heart {
   color: rgb(212, 3, 3);
 }
+
+.right h4,
+.right h5 {
+  pointer-events: none;
+}

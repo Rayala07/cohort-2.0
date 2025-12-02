@@ -111,10 +111,13 @@ const reels = [
   },
 ];
 
-let html = "";
+let allReels = document.querySelector(".all-reels");
 
-reels.forEach((reel) => {
-  html += `
+function renderReels() {
+  let html = "";
+
+  reels.forEach((reel, idx) => {
+    html += `
         <div class="reel">
             <video src="${reel.video}" autoplay muted loop></video>
             <div class="bottom">
@@ -131,11 +134,11 @@ reels.forEach((reel) => {
               </div>
             </div> 
             <div class="right icon">
-              <div class="like">
+              <div id=${idx} class="like">
                 <h4 class="like-icon">${
                   reel.isLiked
-                    ? '<i class="ri-heart-3-line"></i>'
-                    : '<i class="ri-heart-3-fill red-heart"></i>'
+                    ? '<i class="ri-heart-3-fill red-heart"></i>'
+                    : '<i class="ri-heart-3-line"></i>'
                 }</h4> 
                 <h5 class="like-count">${reel.likeCount}</h5>
               </div>
@@ -153,8 +156,21 @@ reels.forEach((reel) => {
             </div>
           </div>
     `;
+  });
+
+  allReels.innerHTML = html;
+}
+
+renderReels();
+
+allReels.addEventListener("click", (event) => {
+  if (!(reels[event.target.id].isLiked === true)) {
+    reels[event.target.id].likeCount++;
+    reels[event.target.id].isLiked = true;
+  } else {
+    reels[event.target.id].likeCount--;
+    reels[event.target.id].isLiked = false;
+  }
+
+  renderReels();
 });
-
-let allReels = document.querySelector(".all-reels");
-
-allReels.innerHTML = html;
