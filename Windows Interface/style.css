@@ -125,3 +125,8 @@ html {
   font-size: 1.2rem;
   color: whitesmoke;
 }
+
+.apps {
+  height: 50px;
+  width: 50px;
+}
